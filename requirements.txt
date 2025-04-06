@@ -1,0 +1,9 @@
+fastapi
+uvicorn
+nest_asyncio
+faiss-cpu
+torch
+numpy
+pandas
+transformers
+ollama

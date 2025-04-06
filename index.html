@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>National Portal of India</title>
+    <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+    <div id="google_translate_element" style="display: none;"></div>
+    <div class="top-strip">
+        <div class="accessibility-controls">
+            <button class="color-blind-btn" onclick="toggleColorBlindMode()">Color Blind Mode</button>
+            <div class="font-size-controls">
+                <button class="font-size-btn" onclick="changeFontSize('decrease')">A-</button>
+                <button class="font-size-btn" onclick="changeFontSize('increase')">A+</button>
+            </div>
+        </div>
+        <div class="language-selector">
+            <select id="languageSelect" onchange="changeLanguage()">
+                <option value="en-IN">English</option>
+                <option value="hi-IN">Hindi - हिंदी</option>
+                <option value="bn-IN">Bengali - বাংলা</option>
+                <option value="gu-IN">Gujarati - ગુજરાતી</option>
+                <option value="kn-IN">Kannada - ಕನ್ನಡ</option>
+                <option value="ml-IN">Malayalam - മലയാളം</option>
+                <option value="mr-IN">Marathi - मराठी</option>
+                <option value="od-IN">Odia - ଓଡ଼ିଆ</option>
+                <option value="pa-IN">Punjabi - ਪੰਜਾਬੀ</option>
+                <option value="ta-IN">Tamil - தமிழ்</option>
+                <option value="te-IN">Telugu - తెలుగు</option>
+            </select>
+        </div>
+    </div>
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="India Emblem">
+            <div class= "welcome">
+            </div>
+        </div>
+        <div class="header-text">
+            <h1>National Industrial Classification</h1>
+            <p>Welcome to the National Portal of India</p>
+        </div>
+    </header>
+    <div class="nic-search-section">
+        <h1>NIC Code Search</h1>
+        <div class="nic-search-container">
+            <input type="text" id="searchBox" placeholder="Type or speak..." />
+            <button id="searchButton" class="search-button">Search</button>
+
+            <button id="voiceButton" class="voice-button">
+                <img src="voicelogoc.png" alt="Voice Search">
+            </button>
+        </div>
+
+    
+
+    
+      
+        <div class="nic-results" id="nic-results">
+            <!-- Search results will appear here -->
+        </div>
+    </div>
+
+    <button id="darkModeToggle" class="dark-mode-toggle">
+        <span class="light-icon">🌞</span>
+        <span class="dark-icon">🌙</span>
+    </button>
+
+    </div>
+    <script src="script.js"></script>
+    <script src="newscript1.js"></script>
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+ 
+</body>
+</html>
